@@ -49,7 +49,7 @@ public class LayoutAnimationActivity extends AppCompatActivity {
     public void addViewToGrid() {
         index++;
         Button button = new Button(this);
-        button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+        button.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
         button.setText("测试数据" + index);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +127,7 @@ public class LayoutAnimationActivity extends AppCompatActivity {
                 addViewToGrid();
                 break;
             case R.id.button_layout:
-                Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_set);
+                Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_translate);
                 LayoutAnimationController lac = new LayoutAnimationController(animation);
                 lac.setOrder(LayoutAnimationController.ORDER_NORMAL);
                 lac.setDelay(0.7f);
