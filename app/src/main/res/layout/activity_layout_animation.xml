@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uniquedu.myanimation.LayoutAnimationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加一条数据" />
+
+        <Button
+            android:id="@+id/button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载数据动画" />
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkbox_appear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新出现的View的动画" />
+
+    <CheckBox
+        android:id="@+id/checkbox_change_appear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出现新的View，其它控件的动画" />
+
+    <CheckBox
+        android:id="@+id/checkbox_disappear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="即将消失的View的动画" />
+
+    <CheckBox
+        android:id="@+id/checkbox_change_disappear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有控件消失时其它控件的动画" />
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"></GridLayout>
+</LinearLayout>

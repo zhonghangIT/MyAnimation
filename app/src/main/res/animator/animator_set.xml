@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+    <!-- ordering 指动画是一起播放还是一个接一个播放-->
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="scaleX"
+        android:valueFrom="1"
+        android:valueTo="0.5"></objectAnimator>
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="scaleY"
+        android:valueFrom="1"
+        android:valueTo="0.5"></objectAnimator>
+</set>
